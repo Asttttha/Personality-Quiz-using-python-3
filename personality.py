@@ -20,6 +20,7 @@ def quesToBeAsked(prompt, response1,  response2,  response3):
     reqtime(0.03, response3)
     print()
     print('Write your choice number ')
+    
     while True:
         try:
             response = int(input())
@@ -28,6 +29,7 @@ def quesToBeAsked(prompt, response1,  response2,  response3):
             print('Invalid input. Only use number as input')
             continue
     response = str(response)
+    
     if (response not in response1) and (response not in response2) and (response not in response3):
         print('Huh')
         reqtime(text = '..... that was not even in the options anyway..???')
